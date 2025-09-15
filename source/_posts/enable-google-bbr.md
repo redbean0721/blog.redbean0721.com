@@ -2,6 +2,7 @@
 title: 啟用Google BBR
 date: 2025-09-14 22:45:00
 tags: [Linux, BBR, Ubuntu]
+categories: [教學, 網路]
 ---
 參考資料：
 - [qnic](https://en.wikipedia.org/wiki/QUIC)

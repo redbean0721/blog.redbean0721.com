@@ -2,6 +2,7 @@
 title: 在 RIPE DataBase 建立 Object
 date: 2025-09-14 22:51:33
 tags: [ASN, BGP, RIPE]
+categories: [網路, 教學]
 ---
 在這篇文章中會和大家分享如何在 RIPE DataBase 註冊 MAINTAINER, PERSON / ROLE, ORGANISATION 這三種 Object。
 

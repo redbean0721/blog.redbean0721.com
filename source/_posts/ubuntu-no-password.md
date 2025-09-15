@@ -2,6 +2,7 @@
 title: Ubuntu sudo 免輸入密碼設定
 date: 2025-09-14 23:43:19
 tags: [Linux, Ubuntu]
+categories: [教學, 系統管理, Linux]
 ---
 在 Ubuntu 系統中，預設情況下使用 `sudo` 命令時需要輸入使用者密碼以獲取管理權限。然而，在某些情況下可能希望免輸入密碼即可使用 `sudo`，例如在自動化腳本或特定的開發環境中。以下是如何設定 Ubuntu 使特定使用者免輸入密碼使用 `sudo` 的步驟。
 
