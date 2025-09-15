@@ -1,0 +1,138 @@
+/*!
+ * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com
+ * 精簡版本，僅包含網站實際使用的圖示
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+/* 基礎樣式 */
+.fa {
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+}
+
+.fa, .fa-solid, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}
+
+/* 尺寸和對齊 */
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+
+/* 字體聲明 */
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(/fonts/fa-solid-900.woff2) format("woff2"),
+         url(/fonts/fa-solid-900.woff) format("woff"),
+         url(/fonts/fa-solid-900.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(/fonts/fa-brands-400.woff2) format("woff2"),
+         url(/fonts/fa-brands-400.woff) format("woff"),
+         url(/fonts/fa-brands-400.ttf) format("truetype");
+}
+
+/* 實際使用的圖示 - Solid 系列 */
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+.fa-bookmark:before {
+    content: "\f02e";
+}
+
+.fa-box-archive:before, .fa-archive:before {
+    content: "\f187";
+}
+
+.fa-calendar:before {
+    content: "\f133";
+}
+
+.fa-caret-left:before {
+    content: "\f0d9";
+}
+
+.fa-caret-right:before {
+    content: "\f0da";
+}
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+.fa-copy:before {
+    content: "\f0c5";
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-font-awesome:before {
+    content: "\f2b4";
+}
+
+.fa-grip-vertical:before {
+    content: "\f58e";
+}
+
+.fa-house:before, .fa-home:before {
+    content: "\f015";
+}
+
+.fa-id-card:before {
+    content: "\f2c2";
+}
+
+.fa-lock:before {
+    content: "\f023";
+}
+
+.fa-tags:before {
+    content: "\f02c";
+}
+
+/* 實際使用的圖示 - Brands 系列 */
+.fa-discord:before {
+    content: "\f392";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-telegram:before {
+    content: "\f2c6";
+}
+
+/* 向下兼容性 */
+:host, :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
