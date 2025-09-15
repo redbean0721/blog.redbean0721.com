@@ -6,8 +6,8 @@ avatar: /images/avatar.jpg
 
 # Home page background image
 background:
-    - /images/background.jpg
-    # - https://api.redbean0721.com/api/img
+    # - /images/background.jpg
+    - https://api.redbean0721.com/api/img
 
 # Loading image
 loading: /images/loading.gif
