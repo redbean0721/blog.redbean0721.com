@@ -8,7 +8,9 @@ subtitle: ''
 description: 'redbean0721 的神奇小空間'
 keywords:
 author: redbean0721
-language: zh-TW
+language:
+  - zh-TW
+  - en
 timezone: 'Asia/Taipei'
 
 # URL
