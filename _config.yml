@@ -106,3 +106,20 @@ theme: particlex
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional
+  preloadRatio: 3 # optional, default is 1
+
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: true
+  tags: true
+  categories: true
