@@ -14,7 +14,19 @@ mixins.highlight = {
             let codes = document.querySelectorAll("pre");
             for (let i of codes) {
                 let code = i.textContent;
-                let language = [...i.classList, ...i.firstChild.classList][0] || "plaintext";
+                // let language = [...i.classList, ...i.firstChild.classList][0] || "plaintext";
+                let classNames = [...i.classList, ...i.firstChild.classList];
+                // Extract language from class names, handle both 'language-xxx' and 'xxx' formats
+                let language = "plaintext";
+                for (let className of classNames) {
+                    if (className.startsWith("language-")) {
+                        language = className.replace("language-", "");
+                        break;
+                    } else if (className && className !== "hljs") {
+                        language = className;
+                        break;
+                    }
+                }
                 let highlighted;
                 try {
                     highlighted = hljs.highlight(code, { language }).value;
