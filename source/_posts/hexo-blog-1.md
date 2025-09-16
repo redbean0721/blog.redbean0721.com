@@ -141,4 +141,6 @@ git remote add origin https://github.com/<你的 GitHub 帳號>/<你的 Reposito
 
 P.S. 建立新文章中的 `<fileName>` 是檔案名稱，不需要加副檔名，標題在文章中的 `title` 中修改
 
+> 本文取自 [Hexo 博客搭建教程 I | Argvchs の小窝](https://argvchs.github.io/2022/04/17/hexo-blog-1/) 改寫
+
 下一篇：[Hexo 部落格建置教學 II - 主題與外掛](/hexo-blog-2)
