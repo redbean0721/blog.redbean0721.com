@@ -42,6 +42,19 @@
 #archives h3 {
     margin: 10px 0;
 }
+
+#content-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(""); */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
 #crypto {
     margin: 50px 0;
 }
@@ -82,7 +95,7 @@
     width: 300px;
 }
 #home-card #card-style {
-    background: #fff;
+    background: rgb(255, 255, 255, 0.6);
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 20px #d9d9d980;
@@ -244,7 +257,7 @@
     color: #999;
 }
 #home-posts .post {
-    background: #fff;
+    background: rgb(255, 255, 255, 0.8);
     border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
     transition: box-shadow 0.25s, transform 0.25s;

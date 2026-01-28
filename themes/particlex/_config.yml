@@ -5,9 +5,24 @@
 avatar: /images/avatar.jpg
 
 # Home page background image
-background:
+# background:
     # - /images/background.jpg
-    - https://api.redbean0721.com/api/img
+    # - https://api.redbean0721.com/api/img
+
+homeBackground:
+    # - /images/home-background.jpg
+    # - https://api.redbean0721.com/api/img
+    # -
+
+# Content (or global) background image
+contentBackground:
+    # - /images/content-background.jpg
+    - https://img.redbean0721.com/img/desktop/77992108_p0.jpg
+    - https://img.redbean0721.com/img/desktop/127440533_p0.png
+    - https://img.redbean0721.com/img/desktop/GlcOqzwbUAAmPDw.png
+    - https://img.redbean0721.com/img/desktop/111761592_p0.png
+    - https://img.redbean0721.com/img/desktop/113114668_p0.png
+    - https://img.redbean0721.com/img/desktop/011be029e360608ebfc0c738eecaf55136583e31.png
 
 # Loading image
 loading: /images/loading.gif

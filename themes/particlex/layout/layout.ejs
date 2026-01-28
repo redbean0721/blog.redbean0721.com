@@ -29,6 +29,9 @@
 </head>
 <body>
     <div id="layout">
+        <% if (theme.contentBackground) { %>
+            <div id="content-background" ref="contentBackground" data-images="<%- theme.contentBackground.map(url_for) %>"></div>
+        <% } %>
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
@@ -51,7 +54,7 @@
         </transition>
         <% } %>
     </div>
-    <script src="<%- url_for("/js/main.js") %>"></script>
+    <script src="<%- url_for('/js/main.js') %>"></script>
     <% if (type === "post" && page.comments) { %>
     <%- partial("comment") %>
     <% } %>
