@@ -115,4 +115,4 @@ cp /proc/21421/fd/3 /var/log/app.log
 
 #### 附下圖片
 
-![Termius](../images/linux-ghost-file-cleanup/%20Screenshot_2026-02-07-200220.png.png)
+![Termius](../images/linux-ghost-file-cleanup/Screenshot_2026-02-07-200220.png)
