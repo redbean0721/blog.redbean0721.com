@@ -15,11 +15,11 @@ mixins.preview = {
             
             for (let i of images) {
                 // 圖片載入失敗時替換為備用圖片
-                i.addEventListener("error", () => {
+                i.onerror = () => {
+                    i.onerror = null; // 防止無限迴圈
                     const randomNum = Math.floor(Math.random() * fallbackCount) + 1;
                     i.src = '/images/placeholder/' + 'fallback-' + randomNum + '.jpg';
-                    i.onerror = null; // 防止無限迴圈
-                });
+                };
                 
                 // 點擊預覽
                 i.addEventListener("click", () => {
