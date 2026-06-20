@@ -8,7 +8,7 @@ categories: [生活日常]
 
 <!-- more -->
 
-![Email](../images/discord-unbanned/email-20260221-214524.png)
+![Email](/images/discord-unbanned/email-20260221-214524.png)
 
 ~~原因是我在某個頻道說我7歲歲，幾分鐘後帳號就沒了~~ ~~第一次也是因為亂講話~~
 
@@ -16,10 +16,10 @@ categories: [生活日常]
 
 然後經過幾個月後突然發現可以登入了
 
-![1](../images/discord-unbanned/Screenshot_20260511-163426.png)
+![1](/images/discord-unbanned/Screenshot_20260511-163426.png)
 
 <br>
 
 #### 看完我的身份證後 YAAAA
 
-![2](../images/discord-unbanned/Screenshot_20260511-164834.png)
+![2](/images/discord-unbanned/Screenshot_20260511-164834.png)
