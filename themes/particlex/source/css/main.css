@@ -997,17 +997,19 @@ ol li {
   } */
 .friends-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     width: 100%;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 /* 單個卡片樣式 */
 .friend-card {
     display: flex;
     height: 140px;
-    width: 360px;
+    width: 100%;
+    box-sizing: border-box;
     text-decoration: none; /* 移除連結下底線 */
     color: inherit; /* 繼承文字顏色 */
     border: 4px solid #eaeaea;
@@ -1114,10 +1116,10 @@ ol li {
 }
 
 /* 视差滚动效果 */
-.page-container::before {
+/* .page-container::before {
     background-attachment: fixed;
     transform: translateZ(0);
-}
+} */
 
 /* 动态渐变透明度 */
 .page-content {
