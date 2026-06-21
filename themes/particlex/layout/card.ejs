@@ -24,7 +24,7 @@
         <div class="friend-links">
             <% Object.entries(theme.card.friendLinks).forEach(([key, value]) => { %>
             <div class="friend-link">
-                <a href="<%- url_for(value) %>"><%= key %></a>
+                <a href="<%- url_for(value.url) %>"><%= key %></a>
             </div>
             <% }); %>
         </div>

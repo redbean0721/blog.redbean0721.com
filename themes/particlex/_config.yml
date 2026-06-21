@@ -60,6 +60,10 @@ menu:
         name: tags
         theme: solid
         link: /tags
+    Links:
+        name: link
+        theme: solid
+        link: /friends
 
 # Side info card
 card:
@@ -85,8 +89,18 @@ card:
             link: mailto:redbean0721@redbean0721.com
     friendLinks:
         # Argvchs: https://argvchs.github.io
-        Lnstw: https://willis.lnstw.xyz
-        香起額: https://me.tirms.xyz
+        Lnstw:
+            url: https://willis.lnstw.xyz
+            avatar: https://willis.lnstw.xyz/images/head.png
+            desc: 臭臭
+        香起額:
+            url: https://me.tirms.xyz
+            avatar: https://me.tirms.xyz/images/avatar.jpg
+            desc: 香香
+        # ColdRain:
+        #     url: https://ziheng5.github.io/
+        #     avatar: https://ziheng5.github.io/images/head.jpg
+        #     desc: 理想主义重症患者
 
 # Footer info
 footer:

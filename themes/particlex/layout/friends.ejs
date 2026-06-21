@@ -1,0 +1,17 @@
+<main class="content">
+    <div class="friends-container">
+        <% Object.entries(theme.card.friendLinks).forEach(([key, value]) => { %>
+        <a href="<%= url_for(value.url) %>" class="friend-card" target="_blank" rel="noopener">
+            <div class="friend-avatar">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+                     alt="<%= key %>" 
+                     onload="this.onload = null; setTimeout(() => { this.src = '<%= url_for(value.avatar) %>' }, 800);">
+            </div>
+            <div class="friend-info">
+            <h3><%= key %></h3>
+            <p><%= value.desc %></p>
+            </div>
+        </a>
+        <% }) %>
+    </div>
+</main>

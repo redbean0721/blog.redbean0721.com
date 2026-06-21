@@ -2,6 +2,8 @@
     <div>
         <h1><%= page.title %></h1>
     </div>
+
+    <% if (page.__post) { %>
     <div class="info">
         <span class="date">
             <span class="icon">
@@ -83,3 +85,31 @@
     <% } %>
     <% } %>
 </div>
+
+<% } else { %>
+    <!-- page 部份設計 -->
+    <% if (page.type === 'friend_links') { %>
+        <!-- 友鏈部份設計 -->
+        <div
+            id="home-posts-wrap"
+            ref="homePostsWrap"
+            <%- theme.card.enable || 'class="home-posts-wrap-no-card"' %>
+        >
+
+        <div class="page-container">
+            <div class="page-content">
+                <%- page.content %>
+            </div>
+            </div>
+
+            <!-- 在這裡插入友鏈 -->
+            <div id="friend_links">
+                <%- partial('friends') -%>
+            </div>
+        </div>
+        
+
+    <% } else { %>
+        <!-- 其他 page 部分 -->
+    <% }%>
+<% } %>

@@ -986,3 +986,146 @@ ol li {
         padding-left: 20px;
     }
 }
+
+
+/* 卡片容器 - 響應式網格布局 */
+/* .friends-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 15px;
+  } */
+.friends-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* 單個卡片樣式 */
+.friend-card {
+    display: flex;
+    height: 140px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none; /* 移除連結下底線 */
+    color: inherit; /* 繼承文字顏色 */
+    border: 4px solid #eaeaea;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.friend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 頭像區域 (固定寬度) */
+.friend-avatar {
+    width: 140px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.friend-avatar img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 20px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: block;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* 文字區域（自適應剩餘空間） */
+.friend-info {
+    font-size: 16px; /* 電腦版 */
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.friend-info h3 {
+    font-size: 1.2em; /* 19.2px */
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+.friend-info p {
+    font-size: 0.875em;  /* 14px */
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    transition: font-size 0.3s ease; /* 平滑過渡 */
+}
+
+@media (max-width: 768px) {
+    .friend-info {
+        font-size: 15px; /* 手機版 */
+        }
+}
+
+
+/* page 界面添加背景图片 */
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.redbean0721.com/img/desktop/77992108_p0.jpg); /* 背景圖片 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* 內容下層 */
+    opacity: 0.75; /* 透明度 */
+}
+
+
+@media (max-width: 768px) {
+    .page-container::before {
+        background-attachment: scroll; /* 移动端取消固定背景 */
+    }
+    .page-content {
+        background-color: rgba(255, 255, 255, 0.9); /* 移动端提高可读性 */
+    }
+}
+
+/* 视差滚动效果 */
+/* .page-container::before {
+    background-attachment: fixed;
+    transform: translateZ(0);
+} */
+
+/* 动态渐变透明度 */
+.page-content {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.9) 0%,
+        rgba(255,255,255,0.7) 100%
+    );
+}
