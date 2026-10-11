@@ -60,6 +60,10 @@ menu:
         name: tags
         theme: solid
         link: /tags
+    DN42:
+        name: network-wired
+        theme: solid
+        link: /dn42
     Links:
         name: link
         theme: solid

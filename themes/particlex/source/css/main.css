@@ -713,6 +713,17 @@ blockquote {
     overflow: auto;
     padding: 0 15px;
 }
+blockquote:has(#DN42-Overview, #DN42-\6982\89BD) strong {
+    display: inline-block;
+    min-width: 9em;
+    font-weight: normal;
+}
+@media (max-width: 768px) {
+    blockquote:has(#DN42-Overview, #DN42-\6982\89BD) strong {
+        display: inline;
+        min-width: 0;
+    }
+}
 body {
     background: #f6f8fa;
     color: #1e3e3f;
