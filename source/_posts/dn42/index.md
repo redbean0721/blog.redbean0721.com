@@ -107,6 +107,7 @@ DN42 是一個去中心化的點對點網路，讓個人與組織能建立自己
 | 服務 | 位址 |
 | ------- | ------- |
 | 網站 | https://redbean0721.dn42 |
+| Looking Glass | https://lg-dn42.redbean0721.com / https://lg.redbean0721.dn42 |
 | Anycast 遞迴 DNS | `172.20.45.1` (IPv4) / `fd9d:ff88:3667::1` (IPv6) |
 | 可 Ping 位址 | pingable.redbean0721.dn42 |
 

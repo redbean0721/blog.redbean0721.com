@@ -107,6 +107,7 @@ Under development... (guess so)
 | Service | Address |
 | ------- | ------- |
 | Website | https://redbean0721.dn42 |
+| Looking Glass | https://lg-dn42.redbean0721.com / https://lg.redbean0721.dn42 |
 | Anycast Recursive DNS | `172.20.45.1` (IPv4) / `fd9d:ff88:3667::1` (IPv6) |
 | Pingable | pingable.redbean0721.dn42 |
 
